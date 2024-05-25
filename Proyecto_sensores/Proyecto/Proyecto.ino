@@ -11,7 +11,7 @@ float dist2;
 
 NewPing sonar[SONAR_NUM] = {   
   NewPing(11, 12, MAX_DISTANCE), // Each sensor's trigger pin, echo pin, and max distance to ping.
-  NewPing(10, 8, MAX_DISTANCE),
+  NewPing(5, 4, MAX_DISTANCE),
 };
 
 void setup() {
