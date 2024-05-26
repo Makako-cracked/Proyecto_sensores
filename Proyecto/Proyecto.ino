@@ -1,3 +1,4 @@
+//Biblioteca para mover el servomotor que controla la aguja
 #include <Servo.h>
 
 const int trig1 = 2;
