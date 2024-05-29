@@ -26,7 +26,7 @@ void loop() {
   }
 
   while (digitalRead(sw) == 0){
-    pot = analogRead(A2);
+    pot = analogRead(A4);
     mapeo = map(pot, 0, 1023, 0, 255);
     Serial.println(mapeo);
     analogWrite(led, mapeo);

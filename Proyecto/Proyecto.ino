@@ -3,16 +3,16 @@
 
 const int trig1 = 2;
 const int echo1 = 3;   
+int trig2 = 4;
+int echo2 = 5;
 
 int tiempo1;
 int distancia1;
-int trig2 = 4;
-int echo2 = 5;
 float tiempo2;
 float distancia2;
 
-int ledVerde = 8;
 int ledRojo = 7;
+int ledVerde = 8;
 int servoPin = 9;
 
 Servo servo;
