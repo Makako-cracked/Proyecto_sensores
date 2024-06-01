@@ -82,7 +82,7 @@ void loop() {
     case INICIAL:
      digitalWrite(ledRojo, HIGH);
         digitalWrite(ledVerde, LOW);
-        if (distancia1 < 10) { // Distancia de deteccion
+        if (distancia1 < 5) { // Distancia de deteccion
           servo.write(servoPosAbierta);
           digitalWrite(ledRojo, LOW);
           digitalWrite(ledVerde, HIGH);
@@ -93,7 +93,7 @@ void loop() {
         break;
 
     case DETECTANDO_OBJETO1:
-        if (distancia2 < 10 && distancia1 > 10 ) { // Ha pasado 20 segundos o detecta objeto en el sensor 2
+        if (distancia2 < 5 && distancia1 > 5 ) { // Ha pasado 20 segundos o detecta objeto en el sensor 2
           Serial.println("Estado: Cerrando - LED Verde apagado, LED Rojo encendido, Cerrando servo");
           estadoActual = CERRANDO;
           tiempoInicio = 0;
